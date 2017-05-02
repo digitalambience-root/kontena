@@ -7,6 +7,8 @@ require 'kontena/cli/grid_options'
 
 class Kontena::Command < Clamp::Command
 
+  include Kontena::Cli::Common
+
   option ['-D', '--debug'], :flag, "Enable debug", environment_variable: 'DEBUG' do
     ENV['DEBUG'] ||= 'true'
   end
