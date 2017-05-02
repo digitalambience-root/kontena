@@ -2,7 +2,6 @@ require_relative 'common'
 
 module Kontena::Cli::Grids
   class ListCommand < Kontena::Command
-    include Kontena::Cli::Common
     include Common
 
     option ['-u', '--use'], :flag, 'Automatically use first available grid sorted by user count', hidden: true

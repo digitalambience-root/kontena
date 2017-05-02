@@ -3,7 +3,6 @@ require 'open3'
 module Kontena::Cli::Plugins
   class InstallCommand < Kontena::Command
     include Kontena::Util
-    include Kontena::Cli::Common
 
     parameter 'NAME', 'Plugin name'
 

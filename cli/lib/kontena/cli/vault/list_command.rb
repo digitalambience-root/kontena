@@ -1,6 +1,5 @@
 module Kontena::Cli::Vault
   class ListCommand < Kontena::Command
-    include Kontena::Cli::Common
     include Kontena::Cli::GridOptions
 
     option '--return', :flag, "Return the keys", hidden: true

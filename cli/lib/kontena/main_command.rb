@@ -1,8 +1,6 @@
 require 'kontena/command'
 
 class Kontena::MainCommand < Kontena::Command
-  include Kontena::Util
-  include Kontena::Cli::Common
 
   option ['-v', '--version'], :flag, "Output Kontena CLI version #{Kontena::Cli::VERSION}" do
     build_tags = [ 'ruby' + RUBY_VERSION ]

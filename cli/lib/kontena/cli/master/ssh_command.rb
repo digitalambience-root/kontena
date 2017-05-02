@@ -1,8 +1,6 @@
 module Kontena::Cli::Master
   class SshCommand < Kontena::Command
 
-    include Kontena::Cli::Common
-
     parameter "[COMMANDS] ...", "Run command on host"
 
     option ["-i", "--identity-file"], "IDENTITY_FILE", "Path to ssh private key"

@@ -1,7 +1,5 @@
 module Kontena::Cli::Master
   class ListCommand < Kontena::Command
-    include Kontena::Cli::Common
-
     def execute
       puts '%-24s %-30s' % ['Name', 'Url']
       current_master = config.current_master

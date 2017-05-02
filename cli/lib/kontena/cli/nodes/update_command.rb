@@ -1,6 +1,5 @@
 module Kontena::Cli::Nodes
   class UpdateCommand < Kontena::Command
-    include Kontena::Cli::Common
     include Kontena::Cli::GridOptions
 
     parameter "NODE_ID", "Node id"

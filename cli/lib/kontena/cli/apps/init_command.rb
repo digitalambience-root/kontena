@@ -7,7 +7,6 @@ require_relative 'kontena_yml_generator'
 
 module Kontena::Cli::Apps
   class InitCommand < Kontena::Command
-    include Kontena::Cli::Common
     include Common
 
     option ["-f", "--file"], "FILE", "Specify a docker-compose file", attribute_name: :docker_compose_file, default: 'docker-compose.yml'

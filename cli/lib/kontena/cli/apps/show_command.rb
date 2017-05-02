@@ -2,7 +2,6 @@ require_relative 'common'
 
 module Kontena::Cli::Apps
   class ShowCommand < Kontena::Command
-    include Kontena::Cli::Common
     include Kontena::Cli::GridOptions
     include Common
 

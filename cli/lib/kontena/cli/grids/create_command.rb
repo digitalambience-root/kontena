@@ -2,7 +2,6 @@ require_relative 'common'
 
 module Kontena::Cli::Grids
   class CreateCommand < Kontena::Command
-    include Kontena::Cli::Common
     include Common
 
     parameter "NAME", "Grid name"
@@ -25,7 +24,7 @@ module Kontena::Cli::Grids
       payload[:default_affinity] = self.default_affinity_list unless self.default_affinity_list.empty?
       payload[:subnet] = subnet if subnet
       payload[:supernet] = supernet if supernet
-      
+
       grid = nil
       if initial_size == 1
         warning "Option --initial-size=1 is only recommended for test/dev usage" unless running_silent?

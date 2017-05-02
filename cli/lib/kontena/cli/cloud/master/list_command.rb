@@ -1,8 +1,6 @@
 module Kontena::Cli::Cloud::Master
   class ListCommand < Kontena::Command
 
-    include Kontena::Cli::Common
-
     callback_matcher 'cloud-master', 'list'
 
     option '--return', :flag, 'Return the list', hidden: true

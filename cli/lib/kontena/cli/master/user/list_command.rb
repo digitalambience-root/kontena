@@ -2,7 +2,6 @@ require_relative '../../common'
 
 module Kontena::Cli::Master::User
   class ListCommand < Kontena::Command
-    include Kontena::Cli::Common
 
     def execute
       require_api_url

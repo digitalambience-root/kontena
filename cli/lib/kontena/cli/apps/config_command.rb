@@ -3,7 +3,6 @@ require 'pp'
 
 module Kontena::Cli::Apps
   class ConfigCommand < Kontena::Command
-    include Kontena::Cli::Common
     include Common
 
     option ['-f', '--file'], 'FILE', 'Specify an alternate Kontena compose file', attribute_name: :filename, default: 'kontena.yml'
